@@ -1,0 +1,8 @@
+This is a project to help those who want to learn kubernetes by simply deploying an ec2 cluster into AWS 
+via Terraform. This creates 3 ec2 instances in the public subnet of the default vpc of AWS. Then the 
+Scripts will run on the master and the workers. These script install k8 and join them together in the 
+cluster as well as enable proxy access from each. Once you apply the Terraform it will give you the IP 
+address to ssh into. 
+
+Note a few things, you will want to set the aws cli profile you use when applying the terraform. You will
+also want to create and set your ssh key in AWS to use.
